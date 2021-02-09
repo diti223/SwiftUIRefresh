@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96DE443425D2ABF700838414 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 96DE443325D2ABF700838414 /* Introspect */; };
+		96DE443925D2D0DC00838414 /* RefreshableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C085EF2923CD2A910026172A /* RefreshableScrollView.swift */; };
 		C085EF1723CD29340026172A /* SwiftUIRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = C085EF1523CD29340026172A /* SwiftUIRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C085EF1E23CD29C50026172A /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = C085EF1D23CD29C50026172A /* PullToRefresh.swift */; };
 		C085EF2623CD2A910026172A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C085EF2523CD2A910026172A /* AppDelegate.swift */; };
 		C085EF2823CD2A910026172A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C085EF2723CD2A910026172A /* SceneDelegate.swift */; };
-		C085EF2A23CD2A910026172A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C085EF2923CD2A910026172A /* ContentView.swift */; };
 		C085EF3823CD2D310026172A /* SwiftUIRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C085EF1223CD29340026172A /* SwiftUIRefresh.framework */; };
-		C0D209F42422D39000E0C74F /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = C0D209F32422D39000E0C74F /* Introspect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,7 @@
 		C085EF2323CD2A910026172A /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C085EF2523CD2A910026172A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C085EF2723CD2A910026172A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C085EF2923CD2A910026172A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C085EF2923CD2A910026172A /* RefreshableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableScrollView.swift; sourceTree = "<group>"; };
 		C085EF3323CD2A940026172A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0D209F42422D39000E0C74F /* Introspect in Frameworks */,
+				96DE443425D2ABF700838414 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				C085EF1D23CD29C50026172A /* PullToRefresh.swift */,
+				C085EF2923CD2A910026172A /* RefreshableScrollView.swift */,
 				C085EF1523CD29340026172A /* SwiftUIRefresh.h */,
 				C085EF1623CD29340026172A /* Info.plist */,
 			);
@@ -82,7 +83,6 @@
 			children = (
 				C085EF2523CD2A910026172A /* AppDelegate.swift */,
 				C085EF2723CD2A910026172A /* SceneDelegate.swift */,
-				C085EF2923CD2A910026172A /* ContentView.swift */,
 				C085EF3323CD2A940026172A /* Info.plist */,
 			);
 			path = Examples;
@@ -124,7 +124,7 @@
 			);
 			name = SwiftUIRefresh;
 			packageProductDependencies = (
-				C0D209F32422D39000E0C74F /* Introspect */,
+				96DE443325D2ABF700838414 /* Introspect */,
 			);
 			productName = SwiftUIRefresh;
 			productReference = C085EF1223CD29340026172A /* SwiftUIRefresh.framework */;
@@ -176,7 +176,7 @@
 			);
 			mainGroup = C085EF0823CD29340026172A;
 			packageReferences = (
-				C0D209F22422D39000E0C74F /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				96DE443225D2ABF700838414 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 			);
 			productRefGroup = C085EF1323CD29340026172A /* Products */;
 			projectDirPath = "";
@@ -211,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C085EF1E23CD29C50026172A /* PullToRefresh.swift in Sources */,
+				96DE443925D2D0DC00838414 /* RefreshableScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +221,6 @@
 			files = (
 				C085EF2623CD2A910026172A /* AppDelegate.swift in Sources */,
 				C085EF2823CD2A910026172A /* SceneDelegate.swift in Sources */,
-				C085EF2A23CD2A910026172A /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,20 +469,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C0D209F22422D39000E0C74F /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+		96DE443225D2ABF700838414 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:siteline/SwiftUI-Introspect.git";
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
+				minimumVersion = 0.1.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C0D209F32422D39000E0C74F /* Introspect */ = {
+		96DE443325D2ABF700838414 /* Introspect */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C0D209F22422D39000E0C74F /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			package = 96DE443225D2ABF700838414 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
 			productName = Introspect;
 		};
 /* End XCSwiftPackageProductDependency section */
