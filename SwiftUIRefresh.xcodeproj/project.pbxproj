@@ -10,7 +10,6 @@
 		96DE443425D2ABF700838414 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 96DE443325D2ABF700838414 /* Introspect */; };
 		96DE443925D2D0DC00838414 /* RefreshableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C085EF2923CD2A910026172A /* RefreshableScrollView.swift */; };
 		C085EF1723CD29340026172A /* SwiftUIRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = C085EF1523CD29340026172A /* SwiftUIRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C085EF1E23CD29C50026172A /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = C085EF1D23CD29C50026172A /* PullToRefresh.swift */; };
 		C085EF2623CD2A910026172A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C085EF2523CD2A910026172A /* AppDelegate.swift */; };
 		C085EF2823CD2A910026172A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C085EF2723CD2A910026172A /* SceneDelegate.swift */; };
 		C085EF3823CD2D310026172A /* SwiftUIRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C085EF1223CD29340026172A /* SwiftUIRefresh.framework */; };
@@ -20,7 +19,6 @@
 		C085EF1223CD29340026172A /* SwiftUIRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUIRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C085EF1523CD29340026172A /* SwiftUIRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftUIRefresh.h; sourceTree = "<group>"; };
 		C085EF1623CD29340026172A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C085EF1D23CD29C50026172A /* PullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
 		C085EF2323CD2A910026172A /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C085EF2523CD2A910026172A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C085EF2723CD2A910026172A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +68,6 @@
 		C085EF1423CD29340026172A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C085EF1D23CD29C50026172A /* PullToRefresh.swift */,
 				C085EF2923CD2A910026172A /* RefreshableScrollView.swift */,
 				C085EF1523CD29340026172A /* SwiftUIRefresh.h */,
 				C085EF1623CD29340026172A /* Info.plist */,
@@ -210,7 +207,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C085EF1E23CD29C50026172A /* PullToRefresh.swift in Sources */,
 				96DE443925D2D0DC00838414 /* RefreshableScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
